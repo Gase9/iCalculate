@@ -1,0 +1,131 @@
+:root {
+	--bg: rgb( 242, 199, 162);
+	--purple: rgb(2, 46, 64);
+	--light-blue: rgb(86, 119, 140);
+	--light-red: rgb(217, 107, 98);
+	--dark-red: rgb(166, 87, 87);
+	--text: rgb(235, 223, 223);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: var(--bg);
+	font-family: 'Indie Flower', cursive;
+}
+
+*, *:after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	color: var(--light-blue);
+	transform: scale(1.1);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.headLine {
+	background: var(--purple);
+	color: var(--text);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	font-size: 1.6em;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.headLine h2 {
+	border-bottom: 0.5px dashed rgba(86, 119, 140,0.7);
+	width: 50%;
+	font-weight: 900;
+	display: flex;
+	justify-content: center;
+}
+
+svg#bigTriangleColor {
+	pointer-events: none;
+	margin: 0;
+}
+
+#bigTriangleColor path {
+	fill: var(--purple);
+	stroke: var(--purple);
+	stroke-width: 2;
+}
+h2 {
+	display: flex;
+	align-items: baseline;
+}
+h2 span {
+	font-size: 0.8em;
+	margin-right: 0.1em;
+	font-family: 'Indie Flower', cursive;
+}
+
+.calculator {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: -3em;
+}
+
+.btns {
+	display: grid;
+	grid-template-columns: repeat(4, 3fr);
+}
+
+.btns button {
+	background: var(--light-blue);
+	color: rgb(235, 223, 223);
+	border: 1px solid rgba(0,0,0,0.3);
+	font-size: 1.9em;
+	outline: none;
+	width: 2.5em;
+	margin: 0.5px;
+	padding: 0.3em;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+.btns button:active {
+	background: var(--purple);
+}
+
+h1 {
+	background: white;
+	width: 9em;
+	text-align: center;
+	box-shadow: inset 1px 1px 4px black;
+	overflow: hidden;
+	font-family: 'Shadows Into Light', cursive;
+}
+
+footer {
+	margin-top: 5em;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	font-size: 1.2em;
+	color: var(--purple);
+}
+
+footer p {
+	margin-right: 0.5em;
+}
