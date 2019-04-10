@@ -1,1 +1,3 @@
 # iCalculate
+
+Simple calculator
